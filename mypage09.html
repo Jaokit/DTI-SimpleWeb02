@@ -10,7 +10,7 @@
 <body>
     <!-- Table Tag ใช้ทำตาราง อยู่ในกลุ่ม Block Tag เป็น Tag คู่ -->
     <!-- แต่ละแถวมีจำนวนคอลัมน์เท่ากัน -->
-    <h1>ตารางแบบที่ 1</h1>
+    <h1>ตารางแบบที่ 1 แต่ละช่องเท่ากัน</h1>
     <table border="1px" width="600">
         <tr>
             <td>11</td>
@@ -51,8 +51,60 @@
 
     <!-- แต่ละแถวมีจำนวนคอลัมน์ไม่เท่ากัน -->
     <hr>
-    <h1>ตารางแบบที่ 2</h1>
-    
+
+    <h1>ตารางแบบที่ 2 แต่ละช่องไม่เท่ากัน</h1>
+    <table style="text-align: center;" border="1px" width="500">
+        <tr style="background-color: yellow; color: red">
+            <td colspan="2" rowspan="2">a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>d</td>
+        </tr>
+        <tr style="background-color: greenyellow; color: red">
+            <td colspan="2">e</td>
+            <td rowspan="2">f</td>
+        </tr>
+        <tr style="background-color: aqua; color: red">
+            <td>g</td>
+            <td>h</td>
+            <td>i</td>
+            <td rowspan="3">j</td>
+        </tr>
+        <tr style="background-color: rgb(246, 137, 191); color: red">
+            <td colspan="3">k</td>
+            <td>l</td>
+        </tr>
+        <tr style="color: red">
+            <td style="background-color: rgb(237, 71, 252);" colspan="2">m</td>
+            <td>n</td>
+            <td>o</td>
+        </tr>
+    </table>
+    <br>
+    <h1>Workshop Table ครั้งที่ 1</h1>
+    <table style="text-align: center;" border="1px" width="500">
+        <tr style="background-color: yellow;">
+            <td colspan="2" rowspan="2">a</td>
+            <td>b</td>
+            <td>c</td>
+            <td rowspan="2">d</td>
+        </tr>
+        <tr style="background-color: rgb(50, 122, 255);">
+            <td colspan="2">e</td>
+        </tr>
+        <tr style="background-color: rgb(163, 199, 163);">
+            <td rowspan="2">f</td>
+            <td colspan="3">g</td>
+            <td>h</td>
+        </tr>
+        <tr style="background-color: blueviolet;">
+            <td>i</td>
+            <td>j</td>
+            <td colspan="2">k</td>
+        </tr>
+    </table>
+
+
 </body>
 
 </html>
